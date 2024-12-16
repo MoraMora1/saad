@@ -1,0 +1,14 @@
+name: amira workflow
+on : push
+jobs:
+ amira_job:
+  runs-on : ubuntu-latest
+  steps:
+   - name : step 1
+     run : echo "amiraaaa ${{runner.os}}"
+   - name : step 2
+     uses : actions/checkout@v4
+     
+     
+   
+  
